@@ -1,0 +1,99 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Dados Preliminares",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "463c10807986c84024ba",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"23512a40d877d7bb0ca1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1090.9127456071292,\"y\":0,\"z\":1000,\"width\":189.36598602991677,\"height\":279.9323271746596,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"COTAHIST_TOTAL.CODNEG\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CODNEG\"},\"Name\":\"COTAHIST_TOTAL.CODNEG\",\"NativeReferenceName\":\"CODNEG\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CODNEG\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'QBTC11'\"}}],[{\"Literal\":{\"Value\":\"'BBOV11'\"}}],[{\"Literal\":{\"Value\":\"'VALE3'\"}}],[{\"Literal\":{\"Value\":\"'PETR3'\"}}],[{\"Literal\":{\"Value\":\"'DIVO11'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 279.93,
+          "width": 189.37,
+          "x": 1090.91,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"50b4ec9abba4e4fe8700\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1090.9526766190643,\"height\":624.4677806873093,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"COTAHIST_TOTAL.DATA_PREGAO\",\"active\":true}],\"Series\":[{\"queryRef\":\"COTAHIST_TOTAL.CODNEG\"}],\"Y\":[{\"queryRef\":\"Sum(COTAHIST_TOTAL.PREABE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"},\"Name\":\"COTAHIST_TOTAL.DATA_PREGAO\",\"NativeReferenceName\":\"DATA_PREGAO\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CODNEG\"},\"Name\":\"COTAHIST_TOTAL.CODNEG\",\"NativeReferenceName\":\"CODNEG\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PREABE\"}},\"Function\":0},\"Name\":\"Sum(COTAHIST_TOTAL.PREABE)\",\"NativeReferenceName\":\"Soma de PREABE\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 624.47,
+          "width": 1090.95,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bdbc6354555bfef7bd07\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":624.4203772835019,\"z\":2000,\"width\":1280.236192530979,\"height\":96.51190188925636,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"COTAHIST_TOTAL.DATA_PREGAO\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"},\"Name\":\"COTAHIST_TOTAL.DATA_PREGAO\",\"NativeReferenceName\":\"DATA_PREGAO\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2021-07-01T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2021-07-01T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 96.51,
+          "width": 1280.24,
+          "x": 0.00,
+          "y": 624.42,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Segmento de Energia",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c5bd9a3fc62c1edb9045",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3e612dcfab30b968e94a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1090.9526766190643,\"y\":0,\"z\":1000,\"width\":189.08187781767134,\"height\":279.890937559053,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"COTAHIST_TOTAL.CODNEG\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CODNEG\"},\"Name\":\"COTAHIST_TOTAL.CODNEG\",\"NativeReferenceName\":\"CODNEG\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CODNEG\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'ALUP11'\"}}],[{\"Literal\":{\"Value\":\"'AURE3'\"}}],[{\"Literal\":{\"Value\":\"'CMIG3'\"}}],[{\"Literal\":{\"Value\":\"'COCE5'\"}}],[{\"Literal\":{\"Value\":\"'CPLE6'\"}}],[{\"Literal\":{\"Value\":\"'CPFE3'\"}}],[{\"Literal\":{\"Value\":\"'ELET3'\"}}],[{\"Literal\":{\"Value\":\"'ENGI11'\"}}],[{\"Literal\":{\"Value\":\"'ENEV3'\"}}],[{\"Literal\":{\"Value\":\"'EGIE3'\"}}],[{\"Literal\":{\"Value\":\"'EQTL3'\"}}],[{\"Literal\":{\"Value\":\"'ISAE4'\"}}],[{\"Literal\":{\"Value\":\"'NEOE3'\"}}],[{\"Literal\":{\"Value\":\"'SRNA3'\"}}],[{\"Literal\":{\"Value\":\"'TAEE11'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 279.89,
+          "width": 189.08,
+          "x": 1090.95,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"51b24c6994e6b398800e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1090.9526766190643,\"height\":624.4677806873093,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"COTAHIST_TOTAL.DATA_PREGAO\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(COTAHIST_TOTAL.PREABE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"},\"Name\":\"COTAHIST_TOTAL.DATA_PREGAO\",\"NativeReferenceName\":\"DATA_PREGAO\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"PREABE\"}},\"Function\":0},\"Name\":\"Sum(COTAHIST_TOTAL.PREABE)\",\"NativeReferenceName\":\"Soma de PREABE\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 624.47,
+          "width": 1090.95,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ddf74827b3cbb65ed556\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":624.4203772835019,\"z\":2000,\"width\":1280.236192530979,\"height\":96.51190188925636,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"COTAHIST_TOTAL.DATA_PREGAO\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"},\"Name\":\"COTAHIST_TOTAL.DATA_PREGAO\",\"NativeReferenceName\":\"DATA_PREGAO\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2016-07-21T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"COTAHIST_TOTAL\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"DATA_PREGAO\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2016-07-21T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 96.51,
+          "width": 1280.24,
+          "x": 0.00,
+          "y": 624.42,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

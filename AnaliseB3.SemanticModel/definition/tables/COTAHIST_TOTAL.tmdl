@@ -1,0 +1,285 @@
+table COTAHIST_TOTAL
+	lineageTag: 146f043d-982d-42ab-9445-bf04696e2ab8
+
+	column TIPREG
+		dataType: string
+		lineageTag: ee06e0d6-1ebe-4f42-a375-d81c02cd825d
+		summarizeBy: none
+		sourceColumn: TIPREG
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA_PREGAO
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 5f734c72-da0e-4169-95b9-e8ccaed2aa27
+		summarizeBy: none
+		sourceColumn: DATA_PREGAO
+
+		variation Variation
+			isDefault
+			relationship: e9cd2356-373b-42ca-899d-8a3819e2bf08
+			defaultHierarchy: LocalDateTable_ebec59dd-6f0b-4fad-81db-7bcfe6c43ca7.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column CODBDI
+		dataType: string
+		lineageTag: e99d3a97-7c3e-419c-aa05-e3e3254ea42c
+		summarizeBy: none
+		sourceColumn: CODBDI
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODNEG
+		dataType: string
+		lineageTag: 9ea6b1f2-7c01-4eee-8300-0d68ca715edc
+		summarizeBy: none
+		sourceColumn: CODNEG
+
+		annotation SummarizationSetBy = Automatic
+
+	column TPMERC
+		dataType: string
+		lineageTag: fe97876e-b992-4408-91c7-66edb23fefba
+		summarizeBy: none
+		sourceColumn: TPMERC
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMRES
+		dataType: string
+		lineageTag: 804f1876-2575-445d-81ba-37aea36dbcd3
+		summarizeBy: none
+		sourceColumn: NOMRES
+
+		annotation SummarizationSetBy = Automatic
+
+	column ESPECI
+		dataType: string
+		lineageTag: 30677a32-a099-42bd-925f-f130995c887b
+		summarizeBy: none
+		sourceColumn: ESPECI
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRAZOT
+		dataType: string
+		lineageTag: bfc57f8f-ec3a-4512-8f9a-79a7cd3f77da
+		summarizeBy: none
+		sourceColumn: PRAZOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODREF
+		dataType: string
+		lineageTag: 98a842f3-d58a-4661-9431-2d46befa8aa5
+		summarizeBy: none
+		sourceColumn: MODREF
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREABE
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 25b4dbdb-39a9-4e5d-ace8-230795f93d04
+		summarizeBy: sum
+		sourceColumn: PREABE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column PREMAX
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 48f20bc4-bfbb-4ec5-bb55-bf582f043276
+		summarizeBy: sum
+		sourceColumn: PREMAX
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column PREMIN
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: b92bbc19-7e9a-4023-948f-da3ce3bb0aa0
+		summarizeBy: sum
+		sourceColumn: PREMIN
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column PREMED
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: d7b7a43a-51cb-45f8-9b8d-87c4f7505614
+		summarizeBy: sum
+		sourceColumn: PREMED
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column PREULT
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 757ff57e-3e06-4e4c-9a65-1368b7596a4c
+		summarizeBy: sum
+		sourceColumn: PREULT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column PREOFC
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 479c611b-6c5c-4515-b322-824245847576
+		summarizeBy: sum
+		sourceColumn: PREOFC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column PREOFV
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: dba3e876-e9b4-42a3-8b73-8679389dbce6
+		summarizeBy: sum
+		sourceColumn: PREOFV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column TOTNEG
+		dataType: int64
+		formatString: 0
+		lineageTag: 84c979f9-ac56-40d2-9796-0c4e1f82097b
+		summarizeBy: sum
+		sourceColumn: TOTNEG
+
+		annotation SummarizationSetBy = Automatic
+
+	column QUATOT
+		dataType: int64
+		formatString: 0
+		lineageTag: 222b2977-28a3-4817-8b26-8d88cb41148e
+		summarizeBy: sum
+		sourceColumn: QUATOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column VOLTOT
+		dataType: decimal
+		lineageTag: ffa50d2c-e1c1-4f4b-94ef-6351986c6d18
+		summarizeBy: sum
+		sourceColumn: VOLTOT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PREEXE
+		dataType: decimal
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 20daaa20-fcf7-4ca9-86c0-9002ba6f420f
+		summarizeBy: sum
+		sourceColumn: PREEXE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column INDOPC
+		dataType: int64
+		formatString: 0
+		lineageTag: fba497fd-8a6f-4759-933c-7572ac3f31ce
+		summarizeBy: sum
+		sourceColumn: INDOPC
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATVEN
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: 4125963c-545b-4358-b93f-8b9ad4386753
+		summarizeBy: none
+		sourceColumn: DATVEN
+
+		variation Variation
+			isDefault
+			relationship: 50cee1f3-03b2-4853-b5fc-fc6a3fdfa168
+			defaultHierarchy: LocalDateTable_0d1ff574-49bb-48ec-9b36-4398bdb61a3f.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column FATCOT
+		dataType: int64
+		formatString: 0
+		lineageTag: b452ae99-300e-4158-ae0c-fe6283593375
+		summarizeBy: sum
+		sourceColumn: FATCOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column PTOEXE
+		dataType: double
+		lineageTag: 47352746-9c93-41c6-882e-ec5810e31146
+		summarizeBy: sum
+		sourceColumn: PTOEXE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CODISI
+		dataType: string
+		lineageTag: f9fc4143-e7b7-4a0c-bf64-f442b78c6533
+		summarizeBy: none
+		sourceColumn: CODISI
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISMES
+		dataType: string
+		lineageTag: c61869f7-bcc1-4c3a-9cd2-2c015f493535
+		summarizeBy: none
+		sourceColumn: DISMES
+
+		annotation SummarizationSetBy = Automatic
+
+	partition COTAHIST_TOTAL = m
+		mode: import
+		source =
+				let
+				    Fonte = Folder.Files(dataFolderPath & "\COTAHIST_A2014_2024"),
+				    #"Removed Hidden Files" = Table.SelectRows(Fonte, each [Attributes]?[Hidden]? <> true),
+				    #"Invocar Função Personalizada1" = Table.AddColumn(#"Removed Hidden Files", "Transformar Arquivo", each #"Transformar Arquivo"([Content])),
+				    #"Renamed Columns" = Table.RenameColumns(#"Invocar Função Personalizada1", {"Name", "Nome da Origem"}),
+				    #"Removed Columns" = Table.SelectColumns(#"Renamed Columns", {"Transformar Arquivo"}),
+				    #"Expanded Column" = Table.ExpandTableColumn(#"Removed Columns", "Transformar Arquivo", Table.ColumnNames(#"Transformar Arquivo"(#"Arquivo de Amostra"))),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Expanded Column",{{"Column1", type text}}),
+				    #"Split Column by Positions" = Table.SplitColumn(#"Changed Type", "Column1", Splitter.SplitTextByPositions({0, 2, 10, 12, 24, 27, 39, 49, 52, 56, 69, 82, 95, 108, 121, 134, 147, 152, 170, 188, 201, 202, 210, 217, 230, 242}), {"TIPREG", "DATA_PREGAO", "CODBDI", "CODNEG", "TPMERC", "NOMRES", "ESPECI", "PRAZOT", "MODREF", "PREABE", "PREMAX", "PREMIN", "PREMED", "PREULT", "PREOFC", "PREOFV", "TOTNEG", "QUATOT", "VOLTOT", "PREEXE", "INDOPC", "DATVEN", "FATCOT", "PTOEXE", "CODISI", "DISMES"}),
+				    #"Filtered Rows" = Table.SelectRows(#"Split Column by Positions", each ([TIPREG] = "01")),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Filtered Rows",{{"TIPREG", type text}, {"DATA_PREGAO", type date}, {"CODBDI", type text}, {"CODNEG", type text}, {"TPMERC", type text}, {"NOMRES", type text}, {"ESPECI", type text}, {"PRAZOT", type text}, {"MODREF", type text}, {"PREABE", Currency.Type}, {"PREMAX", Currency.Type}, {"PREMIN", Currency.Type}, {"PREMED", Currency.Type}, {"PREULT", Currency.Type}, {"PREOFC", Currency.Type}, {"PREOFV", Currency.Type}, {"TOTNEG", Int64.Type}, {"QUATOT", Int64.Type}, {"VOLTOT", type number}, {"PREEXE", Currency.Type}, {"INDOPC", Int64.Type}, {"DATVEN", type date}, {"FATCOT", Int64.Type}, {"PTOEXE", type number}, {"CODISI", type text}, {"DISMES", type text}}),
+				    #"Divided Column" = Table.TransformColumns(#"Changed Type1", {{"PREABE", each _ / 100, Currency.Type}, {"PREMAX", each _ / 100, Currency.Type}, {"PREMIN", each _ / 100, Currency.Type}, {"PREMED", each _ / 100, Currency.Type}, {"PREULT", each _ / 100, Currency.Type}, {"PREOFC", each _ / 100, Currency.Type}, {"PREOFV", each _ / 100, Currency.Type}, {"VOLTOT", each _ / 100, Currency.Type}, {"PREEXE", each _ / 100, Currency.Type}})
+				in
+				    #"Divided Column"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

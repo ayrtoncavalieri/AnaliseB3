@@ -1,0 +1,43 @@
+expression 'Arquivo de Amostra' =
+		let
+		    Fonte = Folder.Files(dataFolderPath & "\COTAHIST_A2014_2024"),
+		    Navegação1 = Fonte{0}[Content]
+		in
+		    Navegação1
+	lineageTag: 7db67886-2478-42c3-8266-ec468b502607
+	queryGroup: 'Transformar Arquivo de COTAHIST_A2014_2024\Consultas Auxiliares'
+
+	annotation PBI_ResultType = Binary
+
+	annotation PBI_NavigationStepName = Navigation
+
+expression Parâmetro1 = #"Arquivo de Amostra" meta [IsParameterQuery=true, BinaryIdentifier=#"Arquivo de Amostra", Type="Binary", IsParameterQueryRequired=true]
+	lineageTag: 39f2cbdb-2ad9-4ac4-8068-b333c166834e
+	queryGroup: 'Transformar Arquivo de COTAHIST_A2014_2024\Consultas Auxiliares'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transformar o Arquivo de Exemplo' =
+		let
+		    Fonte = Table.FromColumns({Lines.FromBinary(Parâmetro1, null, null, 65001)})
+		in
+		    Fonte
+	lineageTag: 66ef1a54-a1a9-4247-b581-d49f2d466068
+	queryGroup: 'Transformar Arquivo de COTAHIST_A2014_2024'
+
+	annotation PBI_ResultType = Table
+
+expression 'Transformar Arquivo' =
+		let
+		    Source = (Parâmetro1 as binary) => let
+		    Fonte = Table.FromColumns({Lines.FromBinary(Parâmetro1, null, null, 65001)})
+		in
+		    Fonte
+		in
+		    Source
+	mAttributes: [ FunctionQueryBinding = "{""exemplarFormulaName"":""Transformar o Arquivo de Exemplo""}" ]
+	lineageTag: be42c67f-7038-419e-8556-871eb7de48dc
+	queryGroup: 'Transformar Arquivo de COTAHIST_A2014_2024\Consultas Auxiliares'
+
+	annotation PBI_ResultType = Function
+

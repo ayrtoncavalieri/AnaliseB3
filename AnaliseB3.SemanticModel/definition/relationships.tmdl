@@ -1,0 +1,10 @@
+relationship e9cd2356-373b-42ca-899d-8a3819e2bf08
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COTAHIST_TOTAL.DATA_PREGAO
+	toColumn: LocalDateTable_ebec59dd-6f0b-4fad-81db-7bcfe6c43ca7.Date
+
+relationship 50cee1f3-03b2-4853-b5fc-fc6a3fdfa168
+	joinOnDateBehavior: datePartOnly
+	fromColumn: COTAHIST_TOTAL.DATVEN
+	toColumn: LocalDateTable_0d1ff574-49bb-48ec-9b36-4398bdb61a3f.Date
+

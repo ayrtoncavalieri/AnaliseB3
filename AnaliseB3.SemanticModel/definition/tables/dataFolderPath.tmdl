@@ -1,0 +1,31 @@
+/// Path to the folder containing the historic files. Adjust to your environment.
+table dataFolderPath
+	isHidden
+	lineageTag: 563be0e6-f1a8-4aa4-8f28-0a91eae0c3cf
+
+	column dataFolderPath
+		dataType: string
+		isHidden
+		lineageTag: 43dd5bad-c88a-4750-84ce-42c56b8c01a3
+		summarizeBy: none
+		sourceColumn: dataFolderPath
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dataFolderPath = m
+		mode: import
+		queryGroup: 'Transformar Arquivo de COTAHIST_A2014_2024'
+		source =
+				let
+				    Source = "D:\B3\AnaliseB3"
+				in
+				    Source
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
